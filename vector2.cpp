@@ -53,6 +53,9 @@ Vector2 Vector2::operator+(Vector2 &rhs) {
 bool Vector2::operator==(Vector2 &rhs) {
 	return (this->x == rhs.x && this->y == rhs.y);
 }
+bool Vector2::operator!=(Vector2 &rhs) {
+	return (this->x != rhs.x || this->y != rhs.y);
+}
 
 float Vector2::Dot(Vector2 a, Vector2 b) {
 	return (a.x * b.x + a.y * b.y);

@@ -19,6 +19,7 @@ struct Vector2 {
 	Vector2 operator/(float &rhs);
 	Vector2 operator+(Vector2 &rhs);
 	bool operator==(Vector2 &rhs);
+	bool operator!=(Vector2 &rhs);
 
 	static float Dot(Vector2 a, Vector2 b);
 	static float Angle(Vector2 from, Vector2 to);
